@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            padding: 20px;
+        }
+        .profile-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 90%;
+            max-width: 350px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        .profile-card img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid #ff6b81;
+        }
+        .profile-card h2 {
+            margin-top: 10px;
+            font-size: 22px;
+            color: #ff4757;
+        }
+        .profile-card p {
+            color: #555;
+            font-size: 14px;
+            margin: 5px 0 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: #ff4757;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .social-icons a:hover {
+            background: #e84118;
+        }
+        @media (max-width: 480px) {
+            .profile-card {
+                padding: 20px;
+            }
+            .profile-card h2 {
+                font-size: 20px;
+            }
+            .profile-card p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="image.png" alt="Profile Picture">
+        <h2>Manduri Jaswanth</h2>
+        <p>Software Development Enthusiast</p>
+        <p>Bringing ideas to life with colors and creativity.</p>
+        <div class="social-icons">
+            <a href="#">&#x2709;</a>
+            <a href="#">&#x1F464;</a>
+            <a href="#">&#x1F517;</a>
+        </div>
+    </div>
+</body>
+</html>
